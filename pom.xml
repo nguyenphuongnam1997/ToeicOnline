@@ -28,6 +28,7 @@
         <servlet.version>4.0.1</servlet.version>
         <jsp.version>2.3.3</jsp.version>
         <mysql.version>8.0.25</mysql.version>
+        <hibernate.version>5.5.4.Final</hibernate.version>
     </properties>
 
     <dependencies>
@@ -45,12 +46,17 @@
             <version>${jsp.version}</version>
             <scope>provided</scope>
         </dependency>
-
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
         </dependency>
     </dependencies>
 
