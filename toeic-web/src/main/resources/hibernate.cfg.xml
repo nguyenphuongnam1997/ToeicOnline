@@ -10,6 +10,7 @@
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">nam1997</property>
 
+        <!-- thông tin loại database được sử dụng trong project-->
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="show_sql">true</property>
 
