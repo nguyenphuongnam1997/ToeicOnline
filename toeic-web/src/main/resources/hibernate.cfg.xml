@@ -14,7 +14,8 @@
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="show_sql">true</property>
 
-<!--        &lt;!&ndash; Danh sách các XML mapping file&ndash;&gt;-->
-<!--        <mapping resource="Employee.hbm.xml"/>-->
+        <!-- Danh sách các XML mapping file-->
+        <mapping class="com.namnguyen.core.persistence.entity.User"/>
+        <mapping class="com.namnguyen.core.persistence.entity.Role"/>
     </session-factory>
 </hibernate-configuration>
