@@ -17,5 +17,7 @@
         <!-- Danh sách các XML mapping file-->
         <mapping class="com.namnguyen.core.persistence.entity.User"/>
         <mapping class="com.namnguyen.core.persistence.entity.Role"/>
+        <mapping class="com.namnguyen.core.persistence.entity.Comment"/>
+        <mapping class="com.namnguyen.core.persistence.entity.ListenGuideLine"/>
     </session-factory>
 </hibernate-configuration>

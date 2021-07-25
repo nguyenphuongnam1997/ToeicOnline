@@ -1,6 +1,7 @@
 package com.namnguyen.core.persistence.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "role")
@@ -11,6 +12,9 @@ public class Role {
 
     @Column(name = "name")
     private String name;
+
+    @OneToMany(mappedBy = "role", fetch = FetchType.LAZY)
+    private List<User> userList;
 
     public Integer getRoleId() {
         return roleId;
@@ -26,5 +30,13 @@ public class Role {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public List<User> getUserList() {
+        return userList;
+    }
+
+    public void setUserList(List<User> userList) {
+        this.userList = userList;
     }
 }
